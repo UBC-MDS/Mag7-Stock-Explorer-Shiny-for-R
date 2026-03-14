@@ -3,7 +3,7 @@
 An individual re-implementation of the [DSCI 532 group project](https://github.com/UBC-MDS/DSCI-532_2026_35_financebros) dashboard using **Shiny for R**.  
 The original group project is written in Shiny for Python; this version uses R with `bslib` and `plotly`.
 
-> **Deployed app:** _Add your Posit Connect Cloud link here_
+> **Deployed app:** https://019ce9dc-5be9-9cd2-3845-dd1997d71cec.share.connect.posit.cloud/
 
 ---
 
@@ -42,17 +42,17 @@ The repository includes the required CSV files in `data/`
 
 ## Running the App
 
-From the R console or RStudio, set the working directory to `individual/` and run:
+From the R console or RStudio, set the working directory to `Mag7-Stock-Explorer-Shiny-for-R/` and run:
 
 ```r
-setwd("individual")   # adjust path as needed
+setwd("Mag7-Stock-Explorer-Shiny-for-R")   # adjust path as needed
 shiny::runApp()
 ```
 
 Or from the terminal:
 
 ```bash
-Rscript -e "shiny::runApp('individual')"
+Rscript -e "shiny::runApp('Mag7-Stock-Explorer-Shiny-for-R')"
 ```
 
 ---
@@ -66,7 +66,7 @@ Rscript -e "shiny::runApp('individual')"
 ```r
 install.packages("rsconnect")
 rsconnect::deployApp(
-  appDir   = "individual",
+  appDir   = "Mag7-Stock-Explorer-Shiny-for-R",
   appName  = "mag7-stock-explorer-r",
   server   = "connect.posit.cloud"
 )
@@ -79,7 +79,7 @@ rsconnect::deployApp(
 ## Project Structure
 
 ```
-individual/
+Mag7-Stock-Explorer-Shiny-for-R/
 ├── app.R        # Shiny for R application (UI + server in one file)
 ├── README.md    # This file
 └── data/        # CSV data files included in the repository
